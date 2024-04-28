@@ -13,9 +13,12 @@ const Navbar = ({ openModal }) => {
         </Link>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
           <Link to="/" className="mr-5 hover:text-gray-900" style={{ color: '#f1f5f9' }}>Home</Link>
-          <Link to="/" className="mr-5 hover:text-gray-900" style={{ color: '#f1f5f9' }}>Second Link</Link>
+          <Link to="/" className="mr-5 hover:text-gray-900" style={{ color: '#f1f5f9' }}>
+               <a href="https://www.geeksforgeeks.org/kanban-agile-methodology/" target="_blank" rel="noopener noreferrer">About Kanban</a>
+          </Link>
+
         </nav>
-        <Link to="/project" className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Add Project
+        <Link to="/logout" className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">logout
           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
