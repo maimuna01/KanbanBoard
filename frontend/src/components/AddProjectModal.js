@@ -10,10 +10,10 @@ const AddProjectModal = ({ isModalOpen, closeModal, edit = false, id = null }) =
     const [title, setTitle] = useState('')
     const [desc, setDesc] = useState('');
 
-    useEffect(() => {
+    useEffect(()               => {
         if (edit && isModalOpen) {
             axios.get(`http://localhost:9000/project/${id}`)
-                .then((res) => {
+                .then((res)    => {
                     setTitle(res.data[0].title)
                     setDesc(res.data[0].description)
                 })

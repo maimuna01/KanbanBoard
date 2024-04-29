@@ -4,7 +4,6 @@ import AddTaskModal from './AddTaskModal'
 
 const DropdownMenu = ({ taskId, handleDelete, projectId, setRenderChange }) => {
     const [isEditTaskModalOpen, setEditTaskModal] = useState(false);
-
     const refreshData = () => {
         setRenderChange(true)
     }
@@ -12,7 +11,6 @@ const DropdownMenu = ({ taskId, handleDelete, projectId, setRenderChange }) => {
         e.stopPropagation();
         setEditTaskModal(true)
     }
-
     return (
         <>
             <Popover className={`relative`}>
@@ -50,5 +48,4 @@ const DropdownMenu = ({ taskId, handleDelete, projectId, setRenderChange }) => {
         </>
     )
 }
-
 export default DropdownMenu

@@ -4,12 +4,6 @@ import { Dialog, Transition } from '@headlessui/react'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 
-
-//first later capital in javascript ?
-
-
-
-
 const TaskModal = ({ isOpen, setIsOpen, id }) => {
     const [taskData, setTaskData] = useState('')
 

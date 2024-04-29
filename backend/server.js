@@ -14,6 +14,15 @@ const origin = process.env.CORS_ORIGIN || 'http://localhost:3000'
 
 const app = express()
 
+// app.use(
+//     cors({
+//       //CORS (Cross origin resource sharing): You can allow requests from other domains to access the resources on your server by using the cors() express middleware function. 
+//       origin: ["http://localhost:9000", "http://localhost:3000"],
+//       methods: ["GET", "POST", "PUT", "DELETE"],
+//       credentials: true,
+//     })
+//   );
+
 app.use(cors({
     origin
 }));
